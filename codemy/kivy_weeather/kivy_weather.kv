@@ -1,0 +1,21 @@
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            text: "Weather App"
+            font_size: 32
+
+        TextInput:
+            id: city_input
+            multiline: False
+
+        Button:
+            text: "Submite"
+            font_size: 32
+            on_press: root.press()
+
+        Label:
+            id: result
+            font_size: 20

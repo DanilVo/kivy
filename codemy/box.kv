@@ -1,0 +1,48 @@
+#: import utils kivy.utils
+<MyLayout>
+
+    name:name
+    pizza:pizza
+
+    BoxLayout:
+        orientation : "vertical"
+        size: 250,450
+
+        padding: 50
+        spacing: 20
+
+        Label:
+            text: 'Name'
+        TextInput:
+            multiline: False
+            id: name
+            text: ''
+        
+        Label:
+            text: "Favorite Pizza"
+        TextInput:
+            multiline: False
+            id: pizza
+            text: ''
+
+        Button:
+            text: "Submit Stuff"
+            on_press: root.submite()
+            background_color: utils.get_color_from_hex("#7d25e8")
+
+        Button:
+            text: "Clear Fields"
+            on_press: root.clear()
+            background_color: utils.get_color_from_hex("#e82528")
+
+
+        
+        
+        
+        
+        #Button:
+            #text: "Im hungry"
+            #pos_hint: {'center_x': 0.5}
+            #size_hint: (0.5,0.5)
+            #width: 100
+            #height: 50
